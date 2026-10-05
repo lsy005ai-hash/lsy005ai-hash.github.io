@@ -1,0 +1,19 @@
+/* STEP 3-C：自訂 CSS 放在 Bootstrap 之後載入。先查 DevTools 再調整選擇器。 */
+:root { --portfolio-accent: #146c43; }
+body { --bs-body-font-family: 'Microsoft JhengHei', system-ui, sans-serif; }
+#introTitle { color: var(--portfolio-accent); }
+.project-card { --bs-card-border-radius: 1rem; --bs-card-border-color: #cddfd4; }
+.project-card .card-img-top { aspect-ratio: 3 / 2; object-fit: cover; }
+.btn-brand {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #146c43;
+  --bs-btn-border-color: #146c43;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0f5132;
+  --bs-btn-hover-border-color: #0f5132;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a3622;
+  --bs-btn-active-border-color: #0a3622;
+  --bs-btn-focus-shadow-rgb: 20, 108, 67;
+}
+section, article[id] { scroll-margin-top: 1rem; }
